@@ -1,0 +1,271 @@
+body {
+    background-color: #0F0D13; /* Cor do plano de fundo da página */
+    font-family: 'Roboto', sans-serif; /* FONTE ROBOTO padrão para todo o documento*/
+}
+
+/* Estilos para a classe .container */
+.container {
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+/* Estilos para a classe .player */
+.player {
+    position: absolute; /* Define a posição do player como absoluta */
+    background-color: #2A2141; /* Cor de fundo do player */
+    border-radius: 20px; /* Raio da borda arredondada */
+    overflow: hidden; /* Esconde o conteúdo que passa do limite do player */
+    -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both; /* Animação do player */
+            animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both; /* Animação do player */
+}
+
+/* Estilos para a classe .player01 */
+.player01 {
+    top: 50px;
+    left: 50px;
+    width: 267px; /* Largura do player01 */
+    height: 473px; /* Altura do player01 */
+    z-index: 3; /* Define a ordem de empilhamento do player01 */
+}
+
+.player02 {
+    top: 50px;
+    left: 350px;
+    width: 358px; /* Largura do player02 */
+    height: 267px; /* Altura do player02 */
+    z-index: 2; /* Define a ordem de empilhamento do player02 */    
+}
+
+.player03 {
+    top: 350px;
+    left: 350px;
+    width: 358px; /* Largura do player03 */
+    height: 200px; /* Altura do player03 */
+    z-index: 1; /* Define a ordem de empilhamento do player03 */
+}
+
+/* -----ANIMAÇÃO PLAYERS ----------------------------------------------------------------------------------------------------*/
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+
+/* --------ANIMAÇÃO PLAYERS -------------------------------------------------------------------------------------------------------- */
+
+/* --------ANIMAÇÃO DE ENTRADA -------------------------------------------------------------------------------------------------------- */
+
+#loadingAnimation {
+    position:absolute;
+    top: 275px;
+    left: 100px;
+    width: 100%;
+    height: 100%;
+    background-color: #0F0D13;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#loadingAnimation h1 {
+    font-size: 15vw; /* Ajuste conforme necessário */
+    color: #E1E1E6;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    transition: opacity 1s ease-out;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+body {
+    background-color: #0F0D13; /* Cor do plano de fundo da página */
+    font-family: 'Roboto', sans-serif; /* FONTE ROBOTO padrão para todo o documento */
+}
+
+/* --------ANIMAÇÃO DE ENTRADA -------------------------------------------------------------------------------------------------------- */
+
+/* Estilos para a classe .imagem-interna dentro de .player01, .player02 e .player03 */
+.player01 .imagem-interna {
+    position: relative;
+    width: 189.66px; /* Largura da imagem do player01 */
+    height: 189.66px; /* Altura da imagem do player01 */
+    top: 38.41px; /* Posição vertical da imagem do player01 */
+    left: 38.41px; /* Posição horizontal da imagem do player01 */
+    border-radius: 3%; /* Define o raio da borda da imagem interna */
+}
+
+.player02 .imagem-interna {
+    position: relative;
+    width: 84.03px; /* Largura da imagem do player02 */
+    height: 84.03px; /* Altura da imagem do player02 */
+    top: 28.81px; /* Posição vertical da imagem do player02 */
+    left: 28.81px; /* Posição horizontal da imagem do player02 */
+    border-radius: 3%;
+}
+
+.player03 .imagem-interna {
+    position: relative;
+    width: 84.03px; /* Largura da imagem do player03 */
+    height: 84.03px; /* Altura da imagem do player03 */
+    top: 28.81px; /* Posição vertical da imagem do player03 */
+    left: 28.81px; /* Posição horizontal da imagem do player03 */
+    border-radius: 3%;
+}
+
+/* Estilos comuns para informações da música */
+.info-musica {
+    position: absolute;
+    left: 38.41px;
+    width: 189.66px; /* Largura base para as informações da música */
+    text-align: center; /* Centraliza o texto das informações da música */
+}
+
+/* Estilos específicos para informações da música do player */
+.player01 .info-musica {
+    top: 240px; /* Posição vertical das informações da música do player01 */
+}
+.player02 .info-musica {
+    top: 42px; /* Posição vertical das informações da música do player02 */
+    left: 125px;
+    width: auto; /* Ajuste para a largura automática */
+}
+.player03 .info-musica {
+    top: 42px; /* Posição vertical das informações da música do player03 */
+    left: 125px;
+    width: auto; /* Ajuste para a largura automática */
+}
+
+/* Estilos comuns para o nome da música e da banda */
+.nome-musica, .nome-banda {
+    color: #E1E1E6; /* Cor do texto */
+    margin: 0; /* Remove a margem padrão do parágrafo */
+}
+
+/* Estilos específicos para o nome da música */
+.nome-musica {
+    font-size: 16px; /* Tamanho da fonte para o nome da música */
+}
+
+/* Estilos específicos para o nome da banda */
+.player01 .nome-banda {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 14px; /* Tamanho da fonte para o nome da banda */
+    margin-top: 12px;
+}
+
+.player02 .nome-banda {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 14px; /* Tamanho da fonte para o nome da banda */
+    margin-top: 12px;
+}
+
+.player03 .nome-banda {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 14px; /* Tamanho da fonte para o nome da banda */
+    margin-top: 12px;
+}
+
+/* Estilos para os controles do player */
+.controles {
+    display: flex; /* Define a exibição dos controles como flexível */
+    justify-content: center; /* Centraliza horizontalmente os controles */
+    align-items: center; /* Centraliza verticalmente os controles */
+    margin-top: 15px; /* Margem superior comum para todos os players */
+}
+
+/* Estilos para a classe .controles dentro de .player01 */
+.player01 .controles {
+    margin-top: 150px; /* Define a margem superior dos controles do player01 */
+    display: flex; /* Define a exibição dos controles do player01 como flexível */
+    justify-content: center; /* Centraliza horizontalmente os controles do player01 */
+    align-items: center; /* Centraliza verticalmente os controles do player01 */
+}
+
+/* Estilos para a classe .controles dentro de .player02 */
+.player02 .controles {
+    margin-top: 50px; /* Define a margem superior dos controles do player01 */
+    display: flex; /* Define a exibição dos controles do player02 como flexível */
+    justify-content: center; /* Centraliza horizontalmente os controles do player01 */
+    align-items: center; /* Centraliza verticalmente os controles do player01 */
+}
+
+/* Estilos para a classe .controles dentro de .player03 */
+.player03 .controles {
+    margin-top: 32px; /* Define a margem superior dos controles do player01 */
+    display: flex; /* Define a exibição dos controles do player03 como flexível */
+    justify-content: center; /* Centraliza horizontalmente os controles do player01 */
+    align-items: center; /* Centraliza verticalmente os controles do player01 */
+}
+
+.control-btn {
+    background-color: transparent; /* Define a cor de fundo do botão de controle como transparente */
+    border: none; /* Remove a borda do botão de controle */
+    padding: 10px; /* Define o preenchimento do botão de controle */
+    border-radius: 50%; /* Define o raio da borda do botão de controle */
+    margin: 0 8px; /* Define a margem do botão de controle */
+    cursor: pointer; /* Define o cursor do botão de controle como ponteiro */
+    font-size: 22px; /* Define o tamanho da fonte do botão de controle */
+    color: #E1E1E6; /* Define a cor do texto do botão de controle */
+}
+
+/* Estilos para a barra de progresso e informações de tempo */
+.progress-bar-container {
+    margin-left: 38px;
+    width: 75%; /* Define a largura da barra de progresso */
+    height: 6px; /* Define a altura da barra de progresso */
+    background-color: #444; /* Cor de fundo da barra de progresso */
+    border-radius: 5px; /* Define o raio da borda da barra de progresso */
+    margin-top: 10px; /* Margem superior da barra de progresso */
+    overflow: hidden; /* Esconde o conteúdo que passa do limite */
+}
+
+.progress-bar {
+    width: 0; /* Largura inicial da barra de progresso */
+    height: 100%; /* Altura da barra de progresso */
+    background-color: #E1E1E6; /* Cor da barra de progresso */
+    border-radius: 5px; /* Define o raio da borda da barra de progresso */
+    transition: width 0.1s linear; /* Animação suave para a barra de progresso */
+}
+
+.time-info {
+    display: flex; /* Define a exibição das informações de tempo como flexível */
+    justify-content:space-around; /* Espaça os itens igualmente */
+    margin-top: 5px; /* Margem superior das informações de tempo */
+    font-size: 12px; /* Tamanho da fonte das informações de tempo */
+    color: #E1E1E6; /* Cor do texto das informações de tempo */
+}
+
+.time-info .total-time,
+.time-info #tempoDecorrido {
+    margin: 0 5px; /* Define a margem das informações de tempo */
+
+}
